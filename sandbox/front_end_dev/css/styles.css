@@ -49,9 +49,10 @@
   }
   
   .rightNav > .material-icons {
-    font-size:60px;
-    margin-right:2px;
-    opacity:0.8;
+    font-size: 60px;
+    margin-right: 2px;
+    opacity: 0.8;
+    color: #407adb;
   }
   
   .myAccountBox > .address, .eth, .PLNStoken {
@@ -385,6 +386,20 @@
     margin-top:25px;
     margin-bottom: 20px;
   }
+
+
+  .nav_btn {
+    background-color: #e5e5e5;
+    color: black;
+    transition: 0.4s;
+  }
+
+  .nav_btn:hover {
+    background-color: #4060c2;
+    color: white;
+    size: 105%;
+  }
+
   .errorMessage {
     width: 500px;
     margin: 0 auto;
