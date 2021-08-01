@@ -8,8 +8,7 @@ At PlaneSimple we understand your aviation assets are valuable and need to be pr
 
 We utilize smart contracts on Ethereum to facilitate trustless transactions between the Owner and the Lessee. All funds will be locked in escrow until certain conditions are met for release, ensuring counter-party risk is at a minimum.
 
-![plnswide](/sandbox/front_end_dev/images/aeroplane_2.png){:height="36px" width="36px"}
-<img src="/sandbox/front_end_dev/images/aeroplane_2.png" alt="Your image title" width="50"/>
+<img src="/sandbox/front_end_dev/images/aeroplane_2.png" alt="Your image title" width="400"/>
 
 ## $PLNS
 $PLNS is a fungible token, built to the ERC-20 token standard. It is designed to be an all purpose alternate currency that allows owners and users to transact and lease in the PlaneSimple marketplace. 
