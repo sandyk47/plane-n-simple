@@ -21,6 +21,6 @@ After the initial sale, all remaining $PLNS tokens will be burned and those that
 
 ## Timeline
 
-![rmap](/sandbox/front_end_dev/images/roadmap.png)
+![rmap](/sandbox/front_end_dev/images/rdmap_wide.png)
 
 
