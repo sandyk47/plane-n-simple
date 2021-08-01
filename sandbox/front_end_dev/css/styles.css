@@ -171,6 +171,11 @@
   }  
 
   #buyTokens {
+    padding-top: 100px;
+  }  
+
+
+  #buyTokensMain {
     padding-top: 70px;
   }  
 
@@ -440,7 +445,7 @@
 
  /* ########### FROM https://stackoverflow.com/questions/58888176/how-to-make-a-bootstrap-like-tabs-and-pills-using-jquery-and-css */
   
- .nav_link {
+ .btn_link {
     background-color: #39A8B9;
     color: white;
     transition: 0.4s;
@@ -450,14 +455,14 @@
     text-decoration: none;
   }
 
-  .nav_link:hover {
+  .btn_link:hover {
     background-color: #7e4ae6;
     color: white;
     size: 105%;
     transform: scale(1.1);
   }
 
-  .nav_link.active {
+  .btn_link.active {
     background-color: #7e4ae6;
   }  
 
@@ -598,6 +603,15 @@
     margin-top: 70px;
     margin-bottom: 10px;
   }
+  
+  .section_container_noflex {
+    max-width: 1000px;
+    margin: 0 auto;
+    opacity: 0.87;
+    margin-top: 70px;
+    margin-bottom: 10px;
+  }
+
 
   #carousel_container {
     display: flex;
@@ -623,3 +637,8 @@
     text-align: left;
     margin-bottom: 10px;
   }
+
+.modal-body-leftalign {
+  text-align: left;
+
+}
