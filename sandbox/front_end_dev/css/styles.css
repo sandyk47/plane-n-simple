@@ -72,6 +72,8 @@
     width: 100%;
     background-size: cover;
     background-position: unset;
+    /* position: absolute; */
+    bottom: 0px;
   }
 
 
@@ -154,8 +156,9 @@
 
   /* ####################################### Image Refs ####################################### */
 
-  #body-container {
+  .body-container {
     overflow: auto;
+    position: relative;
   }
 
   #about {
@@ -171,7 +174,7 @@
   }  
 
   #buyTokens {
-    padding-top: 100px;
+    /* padding-top: 100px; */
   }  
 
 
@@ -608,10 +611,17 @@
     max-width: 1000px;
     margin: 0 auto;
     opacity: 0.87;
-    margin-top: 70px;
+    margin-top: 60px;
     margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px
   }
 
+  .div_under_nav {
+    margin-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
   #carousel_container {
     display: flex;
@@ -641,4 +651,9 @@
 .modal-body-leftalign {
   text-align: left;
 
+}
+
+.padding_top_bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
