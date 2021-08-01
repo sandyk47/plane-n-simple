@@ -12,7 +12,7 @@ After the initial sale, all remaining $PLNS tokens will be burned and those that
 
 #The PlaneSimple Marketplace.
 
-![plns_logo](/images/sandbox/front_end_dev/images/plane_simple_logo.png)
+![plns_logo](/sandbox/front_end_dev/images/plane_simple_logo.png)
 
 The PlaneSimple marketplace is your portal to frictionless aviation asset transactions. Once in possession of your $PLNS tokens, you can use them to list your aircraft or lease a new aircraft, all in one simple interface.
 
