@@ -52,7 +52,7 @@
     font-size: 60px;
     margin-right: 2px;
     opacity: 0.8;
-    color: #407adb;
+    color: #7e4ae6;
   }
   
   .myAccountBox > .address, .eth, .PLNStoken {
@@ -65,6 +65,53 @@
     background-image: radial-gradient(circle farthest-corner at 50% 50%, #39f, #339);
     padding-bottom: 25px;
   }
+
+
+  .green_container {
+    background-image: radial-gradient(circle farthest-corner at 50% 50%, #409aa7, #337b86);
+    width: 100%;
+    background-size: cover;
+    background-position: unset;
+  }
+
+
+  
+  
+  .green_background {
+    background-color: rgba(44,137,164,0.4);
+    width: 100%;
+    padding-bottom: 25px;
+    background-size: cover;
+    padding-top: 40px;
+  }
+  
+  .cloud_container {
+    background-image: url(../images/Sky32564.gif);
+    background-color: #cccccc;
+    width: 100%;
+    background-size: cover;
+    background-position: inherit;
+    padding-bottom: 10px;
+  }
+
+
+  .cloud_container_2 {
+    background-image: url(../images/sky_move.gif);
+    background-color: #cccccc;
+    width: 100%;
+    padding-bottom: 25px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .wing_container {
+    background-image: url(../images/Plane32975_small.gif);
+    background-color: #cccccc;
+    width: 100%;
+    background-size: cover;
+    background-position: unset;
+  }
+
   
   .containerMiddle {
     width:1000px;
@@ -84,8 +131,8 @@
   }
   
   .movieContainer {
-    width: 500px;
-    padding-bottom:40px;
+    /* width: 500px;
+    padding-bottom:40px; */
   }
   
   .buttonContainer > div{
@@ -120,19 +167,18 @@
   }  
 
   #team {
-    padding-top: 30px;
+    padding-top: 50px;
   }  
 
   #buyTokens {
-    padding-top: 30px;
+    padding-top: 70px;
   }  
 
-  #tokenizePlane {
-    padding-top: 30px;
-  }  
+  /* #registerPlane {
+  }   */
 
   .top-menu-logo {
-    width: 15%;
+    width: 8%;
     height: fit-content;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -144,11 +190,11 @@
   }
 
   .about-image {
-    width: 70%;      
+    width: 25%;      
 }  
 
-.left-fbox {
-    padding-right: 25px;
+.right-fbox {
+    padding-left: 25px;
 }
 
 .form-flex {
@@ -170,7 +216,10 @@
   }
 
 .centered-container {
-    text-align: center;
+  text-align: center;
+  padding-top: 1px;
+  max-width: 800px; 
+  margin: 0 auto;
 }
 
 
@@ -277,10 +326,10 @@
     width: 100%;
     margin: 0 auto;
     font-size: 30px;
-    color: black;
+    color: white;
     opacity: 0.87;
-    margin-top:70px;
-    margin-bottom:10px;    
+    margin-top: 30px;
+    margin-bottom: 10px; 
   }
 
   .white-header {
@@ -333,6 +382,7 @@
     width: 1000px;
     height: auto;
     margin: 0 auto;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -387,18 +437,41 @@
     margin-bottom: 20px;
   }
 
-
-  .nav_btn {
-    background-color: #e5e5e5;
-    color: black;
+ /* ########### FROM https://stackoverflow.com/questions/58888176/how-to-make-a-bootstrap-like-tabs-and-pills-using-jquery-and-css */
+  
+ .nav_link {
+    background-color: #39A8B9;
+    color: white;
     transition: 0.4s;
+    transform: scale(.9);
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
   }
 
-  .nav_btn:hover {
-    background-color: #4060c2;
+  .nav_link:hover {
+    background-color: #7e4ae6;
     color: white;
     size: 105%;
+    transform: scale(1.1);
   }
+
+  .nav_link.active {
+    background-color: #7e4ae6;
+  }  
+
+  .tab {
+    display: none;
+  }
+  
+  .tab.active {
+    display: block;
+  }
+
+
+
+ 
+  /* /* ###########  */
 
   .errorMessage {
     width: 500px;
@@ -448,7 +521,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+    color: white;
     opacity: 0.76;
   }
   .teamPics {
@@ -476,7 +549,7 @@
     justify-content: center;
     font-size:23px;
     font-weight: bold;
-    color: black;
+    color: white;
     opacity: 0.87;
     margin-top:10px;
     margin-bottom: 10px;
@@ -485,7 +558,67 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+    color: white;
     opacity: 0.77;
   }
   
+  .myAccountBox > p {
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #add {
+    font-size: 9px;
+  }
+
+  #logo_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    opacity: 0.9;
+  }
+
+  h2 {
+    font-size: 30px;
+    color: black;
+  }
+
+  .section_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    opacity: 0.87;
+    margin-top: 70px;
+    margin-bottom: 10px;
+  }
+
+  #carousel_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #carousel_add {
+    width: 500px
+  }
+
+  #leasePlane {
+    padding-top: 70px;
+  }
+
+  .text-shad {
+    text-shadow: 1px 1px 3px #1f2123;
+  }
+
+  .ul_features {
+    text-align: left;
+    margin-bottom: 10px;
+  }
