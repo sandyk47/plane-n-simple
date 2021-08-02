@@ -47,6 +47,11 @@ $PLNS is a fungible token, built to the ERC-20 token standard. It is designed to
 | Blockchain  | Ethereum   |Multi-Chain?  
 | Distribution | ICO/Crowdsale | Minter contract key burn
 
+## ICO  
+
+Crowdsale of all tokens, lasting one week after initial deployment. $PLNS are non-transferrable until the crowdsale is complete.  
+
+Once the sale period has ended, any remaining $PLNS tokens will be burned.
 
 ## Utility  
 
