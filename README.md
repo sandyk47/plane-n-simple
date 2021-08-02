@@ -33,36 +33,39 @@ After the initial sale, all remaining $PLNS tokens will be burned and those that
 ## Timeline
 
 
-![rmap](/sandbox/front_end_dev/images/rdmap_wide.png)
+![rmap](/sandbox/front_end_dev/images/roadmap_white.png)
 
 ## Usage
 
 ### How to buy $PLNS
 
-If the $PLNS token sale is still active (Q1 2022), head to [PlaneSimple](http://planesimple.com "PlaneSimple.com") and click on "Buy Tokens". 
+Head to [PlaneSimple](http://planesimple.com "PlaneSimple.com") and connect your Web3 Wallet
+<img src="/sandbox/front_end_dev/images/connectwalletscrn.png" alt="mrkt" width="800"/>
+
+* click on "Marketplace".  
+<img src="/sandbox/front_end_dev/images/market_scrn.png" alt="mrkt" width="800"/>
+
 Input the amount of ETH you would like to spend (exchange rate is .001ETH per $PLNS). 
+<img src="/sandbox/front_end_dev/images/buyplnsscr.png" alt="mrkt" width="800"/>
 
 ### Aircraft Owners (Lessors)
 
 Once you have aquired your $PLNS. 
 
-Head to [PlaneSimple](http://planesimple.com "PlaneSimple.com") and click on "Register".  
+* click on "Register".
+<img src="/sandbox/front_end_dev/images/reg_scrn.png" alt="mrkt" width="800"/>
 
-![register]()
-
-Once your aircraft details have been recorded, submit an offer for Lease using the **SUBMISSION** form.  
+Once your aircraft details have been recorded, you can set your desired rate.  
 
 A small listing fee will be deducted from toue $PLNS token balance.  
 
-![submit]()
-
-Here you will be asked your desired rate, and whether that rate is a wet or dry lease rate (a wet lease includes all running costs).  
-
 You're done! Now sit back, relax and wait for offers.  
+
+Whean an offer is made, you will be notified and have the ability to accept or decline.
 
 ### Aircraft Operators (Lessees)
 
-Head to [PlaneSimple](http://planesimple.com "PlaneSimple.com") and click on 'Lease an aircraft'.  
+Head to [PlaneSimple](http://planesimple.com "PlaneSimple.com") and click on 'Marketplace', then 'Lease a Plane.    
 
 Select your desired aircraft from the list of available assets.  
 
