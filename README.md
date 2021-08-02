@@ -71,6 +71,18 @@ You are ready to pick up your airplane!
 
 ## Challenges
 
+* Solidity
+	Many challenges were encountered in the design of the system of smart contracts. As new developers in Solidity there was a steep learning curve in the process of deploying multiple contracts 	that are required to interact with each other.  
+
+* IPFS
+	IPFS - whilst a valuable tool for a project like this - was difficult to work with given it is still a relatively new concept for the team. 
+
+* Tokenomics
+	Designing a token that meets the needs of the platform and its users is a difficult task. Considerations were;
+	* Supply
+	* Inflationary or fixed cap?
+	* Price stability - whilst it is desirable for potential investors to see an increase in the value of the token, this creates challenges for the users of the platform. Solutions to this could include mechanisms to peg the price to the USD, or flexible leasing costs which can be altered should the price of $PLNS move too severely.
+
 
 
 
