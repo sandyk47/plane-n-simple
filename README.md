@@ -50,9 +50,10 @@ $PLNS is a fungible token, built to the ERC-20 token standard. It is designed to
 
 ## Utility  
 
-The $PLNS token will be the native currency for all transactions on the PlaneSimple Marketplace  
-	* Owners must use $PLNS to register aircraft and pay a listing fee. 
-	* Operators must purchase $PLNS to pay their leasing costs to the aircraft owner.  
+The $PLNS token will be the native currency for all transactions on the PlaneSimple Marketplace.   
+
+	* Owners must use $PLNS to register aircraft and pay a listing fee.   
+	* Operators must purchase $PLNS to pay their leasing costs to the aircraft owner.    
 
 $PLNS can be purchased through our initial crowdsale at a rate of .001ETH per PlaneToken.  
 
