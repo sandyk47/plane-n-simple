@@ -46,7 +46,10 @@ After the initial sale, all remaining $PLNS tokens will be burned and those that
 | ----------- | ----------- |  
 | SYMBOL      | $PLNS       |  
 | Supply Cap  | 1,000,000   |  
-  
+| Exchange rate| .001ETH   |  
+| Standard  | ERC-20   |  
+| Blockchain  | Ethereum   |  
+| Decimals  | 0   |  
     
     
 ## Timeline
