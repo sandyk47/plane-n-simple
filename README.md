@@ -1,3 +1,7 @@
+******
+IMPORTANT - please deploy the marketplace contract, then the CryptosICO contract.
+******
+
 ![plns_logo](/sandbox/front_end_dev/images/plane_simple_logo.png)
 
 ## PlaneSimple
