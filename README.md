@@ -110,7 +110,13 @@ Input the date range desired as well as the minimum number of flying hours you w
 
 Once approved, a 20% deposit amount will be deducted from your $PLNS token balance.  
 
-You are ready to pick up your airplane!  
+You are ready to pick up your airplane!
+
+## Libraries Utilized
+ - Ganache
+ - Truffle
+ - Drizzle
+ - Solidity
 
 ## Challenges
 
