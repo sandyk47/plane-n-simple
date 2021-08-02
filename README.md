@@ -4,13 +4,23 @@
 
 The PlaneSimple marketplace is your portal to frictionless aviation asset transactions. Once in possession of your $PLNS tokens, you can use them to list your aircraft or lease a new aircraft, all in one simple interface.  
 
-What problem does PlaneSimple solve?  
+__What problem does PlaneSimple solve?__    
 
 PlaneSimple helps to reduce friction between:
 * Aircraft owners with unused assets and;
 * Aircraft operators with a need for aircraft.  
 
-Allowing these two parties to interact without the need for a theird party intermediary will inevitably reduce costs as well as increase aircraft utilization rates.  
+Allowing these two parties to interact without the need for a theird party intermediary (Leasing Companies) will significantly reduce costs as well as increase aircraft utilization rates.  
+
+It is estimated that around 46% of the worlds air transport category aircraft are currently being operated under a lease agreement.
+<img src="/sandbox/front_end_dev/images/lease_percentage2020.png" alt="airlease" width="600"/>
+
+Air Lease Corporation - one of the USA's biggest Aircraft leasing company reported an annual revenue of $2.0 Billion, and a net income of $500.9 million in 2021.
+<img src="/sandbox/front_end_dev/images/airlease_ar.png" alt="airlease" width="500"/>
+
+PlaneSimple aims to capture some of this revenue, while at the same time improving Airline Profitability.
+
+
 
 We leverage smart contracts on Ethereum to facilitate trustless transactions between the Owner and the Lessee. All funds are locked in escrow until certain conditions are met for release, ensuring counter-party risk is at a minimum.  
 
