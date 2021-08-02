@@ -12,7 +12,8 @@ PlaneSimple helps to reduce friction between:
 
 Allowing these two parties to interact without the need for a theird party intermediary (Leasing Companies) will significantly reduce costs as well as increase aircraft utilization rates.  
 
-It is estimated that around 46% of the worlds air transport category aircraft are currently being operated under a lease agreement.
+It is estimated that around 46% of the worlds air transport category aircraft are currently being operated under a lease agreement - a number that grows year on year (statitsa)  
+
 <img src="/sandbox/front_end_dev/images/lease_percentage2020.png" alt="airlease" width="600"/>
 
 Air Lease Corporation - one of the USA's biggest Aircraft leasing company reported an annual revenue of $2.0 Billion, and a net income of $500.9 million in 2021.
