@@ -65,7 +65,8 @@ Once you have aquired your $PLNS.
 
 ### Aircraft Operators (Lessees)
 
-Head to [PlaneSimple](http://planesimple.com "PlaneSimple.com") and click on 'Marketplace', then 'Lease a Plane.    
+Head to [PlaneSimple](http://planesimple.com "PlaneSimple.com") and click on 'Marketplace', then 'Lease a Plane. 
+<img src="/sandbox/front_end_dev/images/lease_scrn.png" alt="reg" width="800"/>
 
 Select your desired aircraft from the list of available assets.  
 
