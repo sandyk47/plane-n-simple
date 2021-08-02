@@ -1,644 +1,659 @@
 * {
-    font-family: Roboto, sans-serif;
-  }
-  
-  body {
-    padding: 0px;
-    margin: 0px;
-    color:black;
-    opacity:0.95;
-  }
-   
-  
-  nav {
-    background-color: #FFFFFF;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
-    position:fixed;
-    left:0px;
-    top:0px;
-    right:0px;
-    box-shadow: 0 2px 4px rgba(0,0,0,.5);
-    z-index: 1000;
-  }
-  
-  .titleICO {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: black;
-    opacity: 0.9;
-  }
-  
-  .titleICO > i {
-    margin-right: 3px;
-    font-size: 40px;
-  }
-  
-  .titleICO > div {
-    font-size:20px;
-  }
-  
-  .rightNav {
-    margin:0px;
-    display:flex;
-    align-items: center;
-  }
-  
-  .rightNav > .material-icons {
-    font-size: 60px;
-    margin-right: 2px;
-    opacity: 0.8;
-    color: #7e4ae6;
-  }
-  
-  .myAccountBox > .address, .eth, .PLNStoken {
-    font-size:12px;
-  }
-  
-  .container {
-    background-color: #1954F0;
-    width: 100%;
-    background-image: radial-gradient(circle farthest-corner at 50% 50%, #39f, #339);
-    padding-bottom: 25px;
-  }
+  font-family: Roboto, sans-serif;
+}
 
+body {
+  padding: 0px;
+  margin: 0px;
+  color:black;
+  opacity:0.95;
+}
+ 
 
-  .green_container {
-    background-image: radial-gradient(circle farthest-corner at 50% 50%, #409aa7, #337b86);
-    width: 100%;
-    background-size: cover;
-    background-position: unset;
-  }
+nav {
+  background-color: #FFFFFF;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  position:fixed;
+  left:0px;
+  top:0px;
+  right:0px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.5);
+  z-index: 1000;
+}
 
+.titleICO {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+}
 
-  
-  
-  .green_background {
-    background-color: rgba(44,137,164,0.4);
-    width: 100%;
-    padding-bottom: 25px;
-    background-size: cover;
-    padding-top: 40px;
-  }
-  
-  .cloud_container {
-    background-image: url(../images/Sky32564.gif);
-    background-color: #cccccc;
-    width: 100%;
-    background-size: cover;
-    background-position: inherit;
-    padding-bottom: 10px;
-  }
+.titleICO > i {
+  margin-right: 3px;
+  font-size: 40px;
+}
 
+.titleICO > div {
+  font-size:20px;
+}
 
-  .cloud_container_2 {
-    background-image: url(../images/sky_move.gif);
-    background-color: #cccccc;
-    width: 100%;
-    padding-bottom: 25px;
-    background-size: cover;
-    background-position: center;
-  }
+.rightNav {
+  margin:0px;
+  display:flex;
+  align-items: center;
+}
 
-  .wing_container {
-    background-image: url(../images/Plane32975_small.gif);
-    background-color: #cccccc;
-    width: 100%;
-    background-size: cover;
-    background-position: unset;
-  }
+.rightNav > .material-icons {
+  font-size: 60px;
+  margin-right: 2px;
+  opacity: 0.8;
+  color: #7e4ae6;
+}
 
-  
-  .containerMiddle {
-    width:1000px;
-    margin: 0px auto;
-    color: white;
-    padding-top:120px;
-  }
-  
-  .header1 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
-  
-  .flex {
-    display: flex;
-  }
-  
-  .movieContainer {
-    /* width: 500px;
-    padding-bottom:40px; */
-  }
-  
-  .buttonContainer > div{
-    margin-top: 20px;
-  }
-  
-  .textArea {
-    font-size: 18px;
-  }
-  
-  .video-react, .video-react .video-react-poster {
-    background-color: rgba(0,0,0,0);
-  }
+.myAccountBox > .address, .eth, .PLNStoken {
+  font-size:12px;
+}
 
-.banner-bio {
-    margin-bottom: 30px;
+.container {
+  background-color: #1954F0;
+  width: 100%;
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, #39f, #339);
+  padding-bottom: 25px;
 }
 
 
-  /* ####################################### Image Refs ####################################### */
-
-  #body-container {
-    overflow: auto;
-  }
-
-  #about {
-    padding-top: 30px;
-  }
-
-  #roadmap {
-    padding-top: 30px;
-  }  
-
-  #team {
-    padding-top: 50px;
-  }  
-
-  #buyTokens {
-    padding-top: 100px;
-  }  
+.green_container {
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, #409aa7, #337b86);
+  width: 100%;
+  background-size: cover;
+  background-position: unset;
+  /* position: absolute; */
+  bottom: 0px;
+}
 
 
-  #buyTokensMain {
-    padding-top: 70px;
-  }  
 
-  /* #registerPlane {
-  }   */
 
-  .top-menu-logo {
-    width: 8%;
-    height: fit-content;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-right: 10px;    
-  }
+.green_background {
+  background-color: rgba(44,137,164,0.4);
+  width: 100%;
+  padding-bottom: 25px;
+  background-size: cover;
+  padding-top: 40px;
+}
 
-  .banner-gif {
-    width: 100%;
-  }
+.cloud_container {
+  background-image: url(../images/Sky32564.gif);
+  background-color: #cccccc;
+  width: 100%;
+  background-size: cover;
+  background-position: inherit;
+  padding-bottom: 10px;
+}
 
-  .about-image {
-    width: 25%;      
+
+.cloud_container_2 {
+  background-image: url(../images/sky_move.gif);
+  background-color: #cccccc;
+  width: 100%;
+  padding-bottom: 25px;
+  background-size: cover;
+  background-position: center;
+}
+
+.wing_container {
+  background-image: url(../images/Plane32975_small.gif);
+  background-color: #cccccc;
+  width: 100%;
+  background-size: cover;
+  background-position: unset;
+}
+
+
+.containerMiddle {
+  width:1000px;
+  margin: 0px auto;
+  color: white;
+  padding-top:120px;
+}
+
+.header1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.flex {
+  display: flex;
+}
+
+.movieContainer {
+  /* width: 500px;
+  padding-bottom:40px; */
+}
+
+.buttonContainer > div{
+  margin-top: 20px;
+}
+
+.textArea {
+  font-size: 18px;
+}
+
+.video-react, .video-react .video-react-poster {
+  background-color: rgba(0,0,0,0);
+}
+
+.banner-bio {
+  margin-bottom: 30px;
+}
+
+
+/* ####################################### Image Refs ####################################### */
+
+.body-container {
+  overflow: auto;
+  position: relative;
+}
+
+#about {
+  padding-top: 30px;
+}
+
+#roadmap {
+  padding-top: 30px;
+}  
+
+#team {
+  padding-top: 50px;
+}  
+
+#buyTokens {
+  /* padding-top: 100px; */
+}  
+
+
+#buyTokensMain {
+  padding-top: 70px;
+}  
+
+/* #registerPlane {
+}   */
+
+.top-menu-logo {
+  width: 8%;
+  height: fit-content;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 10px;    
+}
+
+.banner-gif {
+  width: 100%;
+}
+
+.about-image {
+  width: 25%;      
 }  
 
 .right-fbox {
-    padding-left: 25px;
+  padding-left: 25px;
 }
 
 .form-flex {
-    align-items: center;
-    justify-content: space-around;
-    width: 450px;    
+  align-items: center;
+  justify-content: space-around;
+  width: 450px;    
 }
 
 .form-below-flex {
-    align-items: center;
-    justify-content: center;   
+  align-items: center;
+  justify-content: center;   
 }
 
 .textAreaForm {
-    width: 300px;
-    margin: 0 auto;
-    margin-top: 45px;
-    margin-bottom: 45px;
-  }
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
 
 .centered-container {
-  text-align: center;
-  padding-top: 1px;
-  max-width: 800px; 
-  margin: 0 auto;
+text-align: center;
+padding-top: 1px;
+max-width: 800px; 
+margin: 0 auto;
 }
 
 
 /* ############################################################################## */
 
-  /* CSS Code for Start Page */
-  .space-around {
-    justify-content: space-around;
-  }
-  .space-between {
-    justify-content: space-between;
-  }
-  .tokenSaleContainer {
-      width: 1000px;
-      background-color: white;
-      box-shadow: 0 8px 8px rgba(0,0,0,.5);
-     margin: 0 auto;
-     margin-top: -30px;
-     position: relative;
-     padding-top: 10px;
-     padding-bottom: 10px;
-     top: 50px;
-  }
-  .tokenSaleLeftSide {
-    width: 500px;
-    border-right: 1px solid #D9E5F4;
-    height: 100%;
-    margin-top: 10px;
-    padding-right: 20px;
-    padding-left: 30px;
-  }
-  .tokensSold, .contributors {
-    font-size:20px;
-    color:black;
-    opacity:0.87;
-  }
-  .totalSuppy {
-   margin-top: 15px;
-   margin-bottom: 15px;
-   font-size:20px;
-   color:black;
-   opacity:0.87;
-  }
-  .titleTokenSale {
-    font-size: 30px;
-    font-weight: bold;
-    color:black;
-    width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.87;
-  }
-  .tokenSaleEnds {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:black;
-    font-size: 15px;
-    opacity: 0.87;
-    margin-top: 10px;
-  }
-  .time {
-    margin-top: 20px;
-  }
-  .time > div {
-    color: black;
-  }
-  .headerTime {
-    color: black;
-    font-weight: bold;
-    font-size: 25px;
-    opacity: 0.87;
-  }
-  .Icons {
-    width: 800px;
-    margin: 0 auto;
-    margin-top: 50px;
-  }
-  .Icons i {
-    font-size: 25px;
-    color: black;
-    opacity: 0.87;
-  }
-  
-  /* CSS Code for About Page */
-  .whatIs , .roadmap, .contribute {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-    font-size: 30px;
-    color: black;
-    opacity: 0.87;
-    margin-top:70px;
-    margin-bottom:10px;
-  }
-
-  .team {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-    font-size: 30px;
-    color: white;
-    opacity: 0.87;
-    margin-top: 30px;
-    margin-bottom: 10px; 
-  }
-
-  .white-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-    font-size: 30px;
-    color: white;
-    opacity: 0.87;
-    margin-top:70px;
-    margin-bottom:10px;    
-  }
-
-  .whiteP {
-    color: white;
-  }
-
-  .textAreaWhatIs {
+/* CSS Code for Start Page */
+.space-around {
+  justify-content: space-around;
+}
+.space-between {
+  justify-content: space-between;
+}
+.tokenSaleContainer {
     width: 1000px;
-    margin: 0 auto;
-    margin-top:45px;
-  }
+    background-color: white;
+    box-shadow: 0 8px 8px rgba(0,0,0,.5);
+   margin: 0 auto;
+   margin-top: -30px;
+   position: relative;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   top: 50px;
+}
+.tokenSaleLeftSide {
+  width: 500px;
+  border-right: 1px solid #D9E5F4;
+  height: 100%;
+  margin-top: 10px;
+  padding-right: 20px;
+  padding-left: 30px;
+}
+.tokensSold, .contributors {
+  font-size:20px;
+  color:black;
+  opacity:0.87;
+}
+.totalSuppy {
+ margin-top: 15px;
+ margin-bottom: 15px;
+ font-size:20px;
+ color:black;
+ opacity:0.87;
+}
+.titleTokenSale {
+  font-size: 30px;
+  font-weight: bold;
+  color:black;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.87;
+}
+.tokenSaleEnds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:black;
+  font-size: 15px;
+  opacity: 0.87;
+  margin-top: 10px;
+}
+.time {
+  margin-top: 20px;
+}
+.time > div {
+  color: black;
+}
+.headerTime {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  opacity: 0.87;
+}
+.Icons {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.Icons i {
+  font-size: 25px;
+  color: black;
+  opacity: 0.87;
+}
 
-  .whatIsHeader  {
-    font-size:20px;
-    color: black;
-    opacity:0.87;
-    font-weight:bold;
-    margin-bottom:10px;
-    margin-top:20px;
-  }
-  
-  /* CSS Code for Whitepaper Page */
-  .whitepaper {
-    width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #CACACA;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top:80px;
-  }
-  
-  /*CSS Code for Roadmap Page */
-  .roadmapImage img {
-    width: 1000px;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-  }
-  
-  /*CSS Code for Contribute Page */
-  .contributeContainer {
-    width: 1000px;
-    margin: 0 auto;
-    border: 1px solid #CACACA;
-    margin-bottom: 80px;
-    margin-top:20px;
-    padding:20px;
-  }
-  .buyCoins {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .amountToBuy {
-    font-weight:bold;
-    color:black;
-    opacity: 0.87;
-    font-size:20px;
-    margin-right:15px;
-  }
-  .etherPLNS {
-    margin-left:10px;
-    color:black;
-    opacity:0.77;
-  }
-  .successfully {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    font-size:25px;
-    width: 500px;
-    margin: 0 auto;
-    background-color:#43A047;
-    margin-top: 10px;
-    color: white;
-    padding: 20px;
-  }
-  .buttonBuy {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top:25px;
-    margin-bottom: 20px;
-  }
+/* CSS Code for About Page */
+.whatIs , .roadmap, .contribute {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 30px;
+  color: black;
+  opacity: 0.87;
+  margin-top:70px;
+  margin-bottom:10px;
+}
 
- /* ########### FROM https://stackoverflow.com/questions/58888176/how-to-make-a-bootstrap-like-tabs-and-pills-using-jquery-and-css */
-  
- .btn_link {
-    background-color: #39A8B9;
-    color: white;
-    transition: 0.4s;
-    transform: scale(.9);
-    flex: 1;
-    text-align: center;
-    text-decoration: none;
-  }
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 30px;
+  color: white;
+  opacity: 0.87;
+  margin-top: 30px;
+  margin-bottom: 10px; 
+}
 
-  .btn_link:hover {
-    background-color: #7e4ae6;
-    color: white;
-    size: 105%;
-    transform: scale(1.1);
-  }
+.white-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 30px;
+  color: white;
+  opacity: 0.87;
+  margin-top:70px;
+  margin-bottom:10px;    
+}
 
-  .btn_link.active {
-    background-color: #7e4ae6;
-  }  
+.whiteP {
+  color: white;
+}
 
-  .tab {
-    display: none;
-  }
-  
-  .tab.active {
-    display: block;
-  }
+.textAreaWhatIs {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top:45px;
+}
 
+.whatIsHeader  {
+  font-size:20px;
+  color: black;
+  opacity:0.87;
+  font-weight:bold;
+  margin-bottom:10px;
+  margin-top:20px;
+}
 
+/* CSS Code for Whitepaper Page */
+.whitepaper {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #CACACA;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top:80px;
+}
 
- 
-  /* /* ###########  */
+/*CSS Code for Roadmap Page */
+.roadmapImage img {
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
 
-  .errorMessage {
-    width: 500px;
-    margin: 0 auto;
-    background-color:#D32E30;
-    margin-top: 10px;
-    color: white;
-    padding: 20px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .errorMessage > i {
-    margin-right: 10px;
-    font-size: 30px;
-  }
-  .loadingText {
-    font-size:25px;
-    color:black;
-    opacity:0.87;
-    font-weight: bold;
-  }
-  .loadTextSub {
-    font-size:18px;
-    color:black;
-    opacity:0.77;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  .loadingContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  .loadingContainer > div {
-    margin-right: 20px;
-  }
-  
-  
-  /*CSS Code for Team Page */
-  .teamSub {
-    font-size:20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    opacity: 0.76;
-  }
-  .teamPics {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-  }
-  .circlePic img {
-   width: 250px;
-   height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-  .userName {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size:23px;
-    font-weight: bold;
-    color: white;
-    opacity: 0.87;
-    margin-top:10px;
-    margin-bottom: 10px;
-  }
-  .userText {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    opacity: 0.77;
-  }
-  
-  .myAccountBox > p {
-    font-size: 10px;
-    margin: 0px;
-    padding: 0px;
-  }
+/*CSS Code for Contribute Page */
+.contributeContainer {
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #CACACA;
+  margin-bottom: 80px;
+  margin-top:20px;
+  padding:20px;
+}
+.buyCoins {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.amountToBuy {
+  font-weight:bold;
+  color:black;
+  opacity: 0.87;
+  font-size:20px;
+  margin-right:15px;
+}
+.etherPLNS {
+  margin-left:10px;
+  color:black;
+  opacity:0.77;
+}
+.successfully {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size:25px;
+  width: 500px;
+  margin: 0 auto;
+  background-color:#43A047;
+  margin-top: 10px;
+  color: white;
+  padding: 20px;
+}
+.buttonBuy {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:25px;
+  margin-bottom: 20px;
+}
 
-  #add {
-    font-size: 9px;
-  }
+/* ########### FROM https://stackoverflow.com/questions/58888176/how-to-make-a-bootstrap-like-tabs-and-pills-using-jquery-and-css */
 
-  #logo_box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: black;
-    opacity: 0.9;
-  }
+.btn_link {
+  background-color: #39A8B9;
+  color: white;
+  transition: 0.4s;
+  transform: scale(.9);
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+}
 
-  h2 {
-    font-size: 30px;
-    color: black;
-  }
+.btn_link:hover {
+  background-color: #7e4ae6;
+  color: white;
+  size: 105%;
+  transform: scale(1.1);
+}
 
-  .section_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    opacity: 0.87;
-    margin-top: 70px;
-    margin-bottom: 10px;
-  }
-  
-  .section_container_noflex {
-    max-width: 1000px;
-    margin: 0 auto;
-    opacity: 0.87;
-    margin-top: 70px;
-    margin-bottom: 10px;
-  }
+.btn_link.active {
+  background-color: #7e4ae6;
+}  
+
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
+}
 
 
-  #carousel_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
 
-  #carousel_add {
-    width: 500px
-  }
 
-  #leasePlane {
-    padding-top: 70px;
-  }
+/* /* ###########  */
 
-  .text-shad {
-    text-shadow: 1px 1px 3px #1f2123;
-  }
+.errorMessage {
+  width: 500px;
+  margin: 0 auto;
+  background-color:#D32E30;
+  margin-top: 10px;
+  color: white;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.errorMessage > i {
+  margin-right: 10px;
+  font-size: 30px;
+}
+.loadingText {
+  font-size:25px;
+  color:black;
+  opacity:0.87;
+  font-weight: bold;
+}
+.loadTextSub {
+  font-size:18px;
+  color:black;
+  opacity:0.77;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.loadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.loadingContainer > div {
+  margin-right: 20px;
+}
 
-  .ul_features {
-    text-align: left;
-    margin-bottom: 10px;
-  }
+
+/*CSS Code for Team Page */
+.teamSub {
+  font-size:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0.76;
+}
+.teamPics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.circlePic img {
+ width: 250px;
+ height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.userName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:23px;
+  font-weight: bold;
+  color: white;
+  opacity: 0.87;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+.userText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0.77;
+}
+
+.myAccountBox > p {
+  font-size: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#add {
+  font-size: 9px;
+}
+
+#logo_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+}
+
+h2 {
+  font-size: 30px;
+  color: black;
+}
+
+.section_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  opacity: 0.87;
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+.section_container_noflex {
+  max-width: 1000px;
+  margin: 0 auto;
+  opacity: 0.87;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px
+}
+
+.div_under_nav {
+  margin-top: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#carousel_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#carousel_add {
+  width: 500px
+}
+
+#leasePlane {
+  padding-top: 70px;
+}
+
+.text-shad {
+  text-shadow: 1px 1px 3px #1f2123;
+}
+
+.ul_features {
+  text-align: left;
+  margin-bottom: 10px;
+}
 
 .modal-body-leftalign {
-  text-align: left;
+text-align: left;
 
+}
+
+.padding_top_bottom {
+padding-top: 30px;
+padding-bottom: 30px;
 }
