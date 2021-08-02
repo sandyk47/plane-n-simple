@@ -40,11 +40,12 @@ $PLNS is a fungible token, built to the ERC-20 token standard. It is designed to
 | $PLNS TOKEN DETAIL |      | Future Considerations  
 | ----------- | ----------- |-----------  
 | SYMBOL      | $PLNS       |  
+| Decimals  | 0   |Simple for testing, needs altering (base unit 1 $PLNS)
 | Supply Cap  | 1,000,000   |Could increase (unit bias)  
 | Exchange rate| .001ETH   |Could reduce as above  
 | Standard  | ERC-20   |  
 | Blockchain  | Ethereum   |Multi-Chain?  
-| Decimals  | 0   |Simple for testing, needs altering (base unit 1 $PLNS)
+| Distribution | ICO | Minter contract key burn
 
 
 ## Utility  
