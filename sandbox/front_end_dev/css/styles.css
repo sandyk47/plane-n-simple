@@ -156,12 +156,10 @@ nav {
 
 /* ####################################### Image Refs ####################################### */
 
-
 .body-container {
   overflow: auto;
   position: relative;
 }
-
 
 #about {
   padding-top: 30px;
@@ -175,11 +173,9 @@ nav {
   padding-top: 50px;
 }  
 
-
 #buyTokens {
   /* padding-top: 100px; */
 }  
-
 
 
 #buyTokensMain {
@@ -356,174 +352,6 @@ margin: 0 auto;
   margin-top:70px;
   margin-bottom:10px;    
 }
- 
-  /* /* ###########  */
-
-  .errorMessage {
-    width: 500px;
-    margin: 0 auto;
-    background-color:#D32E30;
-    margin-top: 10px;
-    color: white;
-    padding: 20px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .errorMessage > i {
-    margin-right: 10px;
-    font-size: 30px;
-  }
-  .loadingText {
-    font-size:25px;
-    color:black;
-    opacity:0.87;
-    font-weight: bold;
-  }
-  .loadTextSub {
-    font-size:18px;
-    color:black;
-    opacity:0.77;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  .loadingContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  .loadingContainer > div {
-    margin-right: 20px;
-  }
-  
-  
-  /*CSS Code for Team Page */
-  .teamSub {
-    font-size:20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    opacity: 0.76;
-  }
-  .teamPics {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-  }
-  .circlePic img {
-   width: 250px;
-   height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-  .userName {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size:23px;
-    font-weight: bold;
-    color: white;
-    opacity: 0.87;
-    margin-top:10px;
-    margin-bottom: 10px;
-  }
-  .userText {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    opacity: 0.77;
-  }
-  
-  .myAccountBox > p {
-    font-size: 10px;
-    margin: 0px;
-    padding: 0px;
-  }
-
-  #add {
-    font-size: 9px;
-  }
-
-  #logo_box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: black;
-    opacity: 0.9;
-  }
-
-  h2 {
-    font-size: 30px;
-    color: black;
-  }
-
-  .section_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    opacity: 0.87;
-    margin-top: 70px;
-    margin-bottom: 10px;
-  }
-  
-  .section_container_noflex {
-    max-width: 1000px;
-    margin: 0 auto;
-    opacity: 0.87;
-    margin-top: 60px;
-    margin-bottom: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px
-  }
-
-  .div_under_nav {
-    margin-top: 60px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  #carousel_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  #carousel_add {
-    width: 500px
-  }
-
-  #leasePlane {
-    padding-top: 70px;
-  }
-
-  .text-shad {
-    text-shadow: 1px 1px 3px #1f2123;
-  }
-
-  .ul_features {
-    text-align: left;
-    margin-bottom: 10px;
-  }
 
 .whiteP {
   color: white;
@@ -824,7 +652,6 @@ h2 {
 text-align: left;
 
 }
-
 
 .padding_top_bottom {
 padding-top: 30px;
