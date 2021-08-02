@@ -39,13 +39,13 @@ After the initial sale, all remaining $PLNS tokens will be burned and those that
 
 ### How to buy $PLNS
 
-Head to [PlaneSimple](http://planesimple.com "PlaneSimple.com") and connect your Web3 Wallet
-<img src="/sandbox/front_end_dev/images/connectwalletscr.png" alt="mrkt" width="800"/>
+* Head to [PlaneSimple](http://planesimple.com "PlaneSimple.com") and connect your Web3 Wallet: Here's an example of the display on the top right of screen once a wallet is connected.
+<img src="/sandbox/front_end_dev/images/connectwalletscr.png" alt="mrkt" width="300"/>
 
-* click on "Marketplace".  
+* click on "Marketplace". 
 <img src="/sandbox/front_end_dev/images/market_scrn.png" alt="mrkt" width="800"/>
 
-Input the amount of ETH you would like to spend (exchange rate is .001ETH per $PLNS). 
+* Input the amount of ETH you would like to spend (exchange rate is .001ETH per $PLNS). 
 <img src="/sandbox/front_end_dev/images/buyplnsscr.png" alt="mrkt" width="800"/>
 
 ### Aircraft Owners (Lessors)
@@ -55,13 +55,13 @@ Once you have aquired your $PLNS.
 * click on "Register Plane".
 <img src="/sandbox/front_end_dev/images/reg_scrn.png" alt="reg" width="800"/>
 
-Once your aircraft details have been recorded, you can set your desired rate.  
+* Once your aircraft details have been recorded, you can set your desired rate.  
 
-A small listing fee will be deducted from toue $PLNS token balance.  
+* A small listing fee will be deducted from toue $PLNS token balance.  
 
-You're done! Now sit back, relax and wait for offers.  
+* You're done! Now sit back, relax and wait for offers.  
 
-Whean an offer is made, you will be notified and have the ability to accept or decline.
+* When an offer is made, you will be notified and have the ability to accept or decline.
 
 ### Aircraft Operators (Lessees)
 
