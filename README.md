@@ -19,6 +19,9 @@ Our platform uses a native currency (the $PLNS token) to settle all transactions
 <img src="/sandbox/front_end_dev/images/aeroplane_2.png" alt="Your image title" width="400"/>
 
 ## $PLNS
+
+<img src="/sandbox/front_end_dev/images/flowchrt.png" alt="flow" width="1200"/>
+
 $PLNS is a fungible token, built to the ERC-20 token standard. It is designed to be an all purpose alternate currency that allows owners and users to transact and lease in the PlaneSimple marketplace. 
 	* Owners must use $PLNS to register aircraft and pay a listing fee
 	* Operators must purchase $PLNS to pay their leasing costs to the aircraft owner.  
