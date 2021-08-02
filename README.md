@@ -42,14 +42,14 @@ $PLNS can be purchased through our initial crowdsale at a rate of .001ETH per Pl
 After the initial sale, all remaining $PLNS tokens will be burned and those that were purchased will be free to trade on the open market.  
 
 
-| $PLNS TOKEN DETAIL |      |  
-| ----------- | ----------- |  
+| $PLNS TOKEN DETAIL |      | Future Considerations  
+| ----------- | ----------- |-----------  
 | SYMBOL      | $PLNS       |  
-| Supply Cap  | 1,000,000   |  
-| Exchange rate| .001ETH   |  
+| Supply Cap  | 1,000,000   |Could increase (unit bias)  
+| Exchange rate| .001ETH   |Could reduce as above  
 | Standard  | ERC-20   |  
-| Blockchain  | Ethereum   |  
-| Decimals  | 0   |  
+| Blockchain  | Ethereum   |Multi-Chain?  
+| Decimals  | 0   |Simple for testing, needs altering  
     
     
 ## Timeline
@@ -113,6 +113,17 @@ You are ready to pick up your airplane!
 	* Price stability - whilst it is desirable for potential investors to see an increase in the value of the token, this creates challenges for the users of the platform. Solutions to this could include mechanisms to peg the price to the USD, or flexible leasing costs which can be altered should the price of $PLNS move too severely.
 
 
+Risk:
+
+The following were the major risks identified by the team in relation to the project:
+
+1. Users might find it difficult to understand the process of token acquisition as they will need to download and set up a Wallet app along with the creation of their human non-readable address. 
+
+2. Users might lose their private key or delete the app or purchase a new phone without transferring app data to the new one. As a result, they lose access to the tokens. 
+
+3. Users might become victims of a phishing attack and give away their private key. 
+
+4. Legal risks assessment is outside of the scope of this document, however, the areas to explore are as follows - understanding of prerequisites and implication of potential selling of a crypto-object in exchange for fiat money as well as tradability of this object and potential speculative assessment of its nature by regulating authorities.
 
 
 
