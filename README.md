@@ -42,7 +42,7 @@ $PLNS can be purchased through our initial crowdsale at a rate of .001ETH per Pl
 After the initial sale, all remaining $PLNS tokens will be burned and those that were purchased will be free to trade on the open market.  
 
 
-| $PLNS TOKEN DETAIL        |  
+| $PLNS TOKEN DETAIL |      |  
 | ----------- | ----------- |  
 | SYMBOL      | $PLNS       |  
 | Supply Cap  | 1,000,000   |  
