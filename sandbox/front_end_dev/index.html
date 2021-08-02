@@ -40,9 +40,9 @@
   
         <div class="middleNav">
           <a href="#" class="btn btn_link active" data-target="tab-1">Home</a>
-          <a href="#" class="btn btn_link" data-target="tab-2">Register Plane</a>
-          <a href="#" class="btn btn_link" data-target="tab-3">Marketplace</a>
-          <a href="#" class="btn btn_link" data-target="tab-4">Contracts</a>
+          <a href="#" class="btn btn_link" data-target="tab-2">Manage Planes</a>
+          <a href="#" class="btn btn_link" data-target="tab-3">Lease Plane</a>
+          <!-- <a href="#" class="btn btn_link" data-target="tab-4">Contracts</a> -->
         </div>
 
         <div class="rightNav">
@@ -279,35 +279,62 @@
 
       <!-- ##################################################################################################################### -->
       <!-- ##############################################   TAB  2        ###################################################### -->
-      <!-- #############################################  REGISTER PLANE  ###################################################### -->   
+      <!-- #############################################  MANAGE PLANES  ###################################################### -->   
       <!-- ##################################################################################################################### -->         
       <div class="tab" data-tab="tab-2">
 
         <div id="registerPlane" class="wing_container">
           <div class="green_background">        
             <div class=centered-container>
-              <div class="team"> <b>Register Your Plane</b> </div>        
+              <div class="team"> <b>Register New Plane</b> </div>        
               <p class="text-white">
                 If you have a pane you'd like to lease out, throw the details in here.
               </p>
-              <p>
-                  Once your plane is registered, you can lease them out
+              <p class="text-white">
+                  Once your plane is registered, you can lease them out to market.
               </p>
               <div class=textAreaForm>
                 <form>
-                  <div class="form-group">
-                    <label class="text-white" for="exampleInputEmail1">First Criteria</label>
-                    <!-- NEED TO UPDATE THE FORM CONTROL DATA ETC -->
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="send us ya credit card details bro">
+                  <div class="flex">
+                    <div class="form_left_flex">                    
+                      <div class="form-group">
+                        <label class="text-white" for="exampleInputEmail1">Registration No.</label>
+                        <!-- NEED TO UPDATE THE FORM CONTROL DATA ETC -->
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                      </div>
+                      <div class="form-group">
+                        <label class="text-white" for="exampleInputPassword1">Mfr/Mdl Code</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                      </div>
+                      <div class="form-group">
+                        <label class="text-white" for="exampleInputPassword1">Model Name</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                      </div>          
+                      <div class="form-group">
+                        <label class="text-white" for="exampleInputPassword1">Engine Type</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                      </div>          
+                    </div>
+                    <div class="form_right_flex">
+                      <div class="form-group">
+                        <label class="text-white" for="exampleInputEmail1">No. of Engines</label>
+                        <!-- NEED TO UPDATE THE FORM CONTROL DATA ETC -->
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                      </div>
+                      <div class="form-group">
+                        <label class="text-white" for="exampleInputPassword1">No. of Seats</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                      </div>
+                      <div class="form-group">
+                        <label class="text-white" for="exampleInputPassword1">Max Takeoff Weight</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                      </div>          
+                      <div class="form-group">
+                        <label class="text-white" for="exampleInputPassword1">Image</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                      </div>          
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label class="text-white" for="exampleInputPassword1">Second Criteria</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="send us ya passaport number bro">
-                  </div>
-                  <div class="form-group">
-                    <label class="text-white" for="exampleInputPassword1">Third Criteria...</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="send us ya address bro">
-                  </div>          
                   <div align=center>
                     <button type="submit" class="btn btn-default">Submit</button>
                   </div>
@@ -320,37 +347,222 @@
   
         <!-- ######################################## MY PLANES SECTION ######################################## -->
   
-        <div class="centered-container padding_top_bottom" id="myPlanes">
+        <div class="centered-container padding_top_bottom" class="myPlanes">
           <h2> My Planes </h2>    
-          <P>INSERT LIST OF PLANES HERE?</P>   
-        </div>
-  
-        <!-- ######################################## BUY TOKENS SECTION ######################################## -->
-  
-        <div id="buyTokens" class="cloud_container padding_top_bottom">
-          <div>
-      
-            <div class=centered-container>
-              <h2 class=whiteP> <b>Buy Tokens</b></h2>        
-              <p class=whiteP>
-                Enter the amount of eth you're willing to spend of $PLNS tokens in the form below. Hit submit, and Metamask will prompt you to confirm the transaction.
-              </p>
-              <div class=textAreaForm>
-                <form>
-                  <div class="form-group">
-                    <label class=whiteP for="exampleInputEmail1">ETH to spend</label>
-                    <!-- NEED TO UPDATE THE FORM CONTROL DATA ETC -->
-                    <input type="string" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter amount in ETH">
+          
+          <div class="carousel_container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+              </ol>
+
+              
+              <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="../../Images/A320.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-shad">Airbus A320</h5>
+                    <p class="text-shad"><b>status:</b> Available</p>
+                    <p class='text-shad'><b>Contract Number:</b>123hjkfds09j</p>
                   </div>
-                  <div align=center>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+                
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../Images/AC50.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-shad">Airbus A3C50</h5>
+                    <p class="text-shad"><b>status:</b> Available</p>
+                    <p class='text-shad'><b>Contract Number:</b>123hjkfds09j</p>
                   </div>
-                </form>       
+                </div>
+
+
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../Images/b737.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-shad">Boeing 737</h5>
+                    <p class="text-shad"><b>status:</b> Unavailable</p>
+                    <p class='text-shad'><b>Contract Number:</b>123hjkfds09j</p>
+                  </div>
+                </div>
+
+
+
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../Images/b738.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-shad">Boeing 738</h5>
+                    <p class="text-shad"><b>status:</b> Available</p>
+                    <p class='text-shad'><b>Contract Number:</b>123hjkfds09j</p>
+                  </div>
+                </div>
+
+
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../Images/b744.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-shad">Boeing 744</h5>
+                    <p class="text-shad"><b>status:</b> Unavailable</p>
+                    <p class='text-shad'><b>Contract Number:</b>123hjkfds09j</p>
+                  </div>
+                </div>
+
+
+
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../Images/b748.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-shad">Boeing 748</h5>
+                    <p class="text-shad"><b>status:</b> Available</p>
+                    <p class='text-shad'><b>Contract Number:</b>123hjkfds09j</p>
+                  </div>
+                </div>
+
+
+
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../Images/b757.png" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-shad">Boeing 757</h5>
+                    <p class="text-shad"><b>status:</b> Unavailable</p>
+                    <p class='text-shad'><b>Contract Number:</b>123hjkfds09j</p>
+                  </div>
+                </div>
+
+
+
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../Images/b767.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-shad">Boeing 767</h5>
+                    <p class="text-shad"><b>status:</b> Available</p>
+                    <p class='text-shad'><b>Contract Number:</b>123hjkfds09j</p>
+                  </div>
+                </div>
+
+
+
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../Images/B772.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-shad">B772</h5>
+                    <p class="text-shad"><b>status:</b> Unavailable</p>
+                    <p class='text-shad'><b>Contract Number:</b>123hjkfds09j</p>
+                  </div>
+                </div>
+
+
+
+
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../Images/b789.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-shad">b789</h5>
+                    <p class="text-shad"><b>status:</b> Available</p>
+                    <p class='text-shad'><b>Contract Number:</b>123hjkfds09j</p>
+                  </div>
+                </div>
+
+              
               </div>
-            </div>
-          </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>            
+          </div> 
+          
         </div>
+
+
+        <!-- ############ MY OFFERS  -->
+
+          <div class="centered-container padding_top_bottom" class="myPlanes">
+            <h2>My Offers</h2>
+            <div class="flex justify-content-around padding_top_bottom">
+              <div class="card-product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/A6-EDY_A380_Emirates_31_jan_2013_jfk_%288442269364%29_%28cropped%29.jpg/1200px-A6-EDY_A380_Emirates_31_jan_2013_jfk_%288442269364%29_%28cropped%29.jpg" />
+                <div class="card-product-infos">
+                  <h2>Airbus A380</h2>
+                  <p><strong>230 PLNS</strong> for <strong>37 Hours</strong> </p>
+                  <button type="submit" class="btn btn-success">Accept</button>
+                  <button type="submit" class="btn btn-danger">Reject</button>
+                </div>
+              </div>        
+              <div class="card-product">
+                <img src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/G2S6MOXVSZPCRC2QKN7LHOBVD4.jpg" />
+                <div class="card-product-infos">
+                  <h2>Boeing 777X</h2>
+                  <p><strong>740 PLNS</strong> for <strong>37 Hours</strong> </p>
+                  <button type="submit" class="btn btn-success">Accept</button>
+                  <button type="submit" class="btn btn-danger">Reject</button>
+                </div>
+              </div>        
+            </div>
+          </div>      
+          
+
+          <!-- ############ Accepted Offers Awaiting Signature -->
+
+          <div class="centered-container padding_top_bottom" class="myPlanes">
+            <h2>Accepted Offers Awaiting Signature</h2>
+            <div class="flex justify-content-around padding_top_bottom">
+              <div class="card-product">
+                <img src="https://cdn.boldmethod.com/images/blog/lists/2016/03/11-facts-about-the-harrier-jump-jet/2.jpg" />
+                <div class="card-product-infos">
+                  <h2>Harrier Jump Jet</h2>
+                  <p><strong>740 PLNS</strong> for <strong>37 Hours</strong> </p>
+                  <p><strong>Return Date</strong> 2021-09-12 </p>
+                  <p><strong>Leasee:</strong> 0x5...0Efb </p>
+                </div>
+              </div>               
+            </div>
+          </div>            
+          
+          <!-- ############ MY CURRENT CONTRACTS  -->
+
+          <div class="centered-container padding_top_bottom" class="myPlanes">
+            <h2>Planes Currently on Lease</h2>
+            <div class="flex justify-content-around padding_top_bottom">
+              <div class="card-product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Pilatus_PC-12-45%2C_Royal_Flying_Doctor_Service_AN0636290.jpg" />
+                <div class="card-product-infos">
+                  <h2>Pilatus PC-12</h2>
+                  <p><strong>80 PLNS</strong> for <strong>32 Hours</strong> </p>
+                  <p><strong>Return Date</strong> 2021-09-12 </p>
+                  <p><strong>Leasee:</strong> 0x5...0Efb </p>
+                </div>
+              </div>        
+              <div class="card-product">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/F-117_Nighthawk_Front.jpg" />
+                <div class="card-product-infos">
+                  <h2>Lockhead F-117 Nighthawk</h2>
+                  <p><strong>7400 PLNS</strong> for <strong>12 Hours</strong> </p>
+                  <p><strong>Return Date</strong> 2021-08-09 </p>
+                  <p><strong>Leasee:</strong> 0x8...05dz </p>
+                </div>
+              </div>        
+            </div>
+          </div>              
         
+        </div>
       </div>
         
   
@@ -358,45 +570,23 @@
 
       <!-- ##################################################################################################################### -->
       <!-- ##############################################   TAB  3        ###################################################### -->
-      <!-- ##############################################   MARKETPLACE   ###################################################### -->      
+      <!-- ##############################################   LEASE PLANE   ###################################################### -->      
       <!-- ##################################################################################################################### -->
 
 
       <div class="tab" data-tab="tab-3">
         <!-- ######################################## Buy Tokens ######################################## -->      
     
-        <div id="buyTokens" class="cloud_container div_under_nav">
-          <div>
-      
-            <div class=centered-container>
-              <h2 class=whiteP> <b>Buy Tokens</b></h2>        
-              <p class=whiteP>
-                Enter the amount of eth you're willing to spend of $PLNS tokens in the form below. Hit submit, and Metamask will prompt you to confirm the transaction.
-              </p>
-              <div class=textAreaForm>
-                <form>
-                  <div class="form-group">
-                    <label class=whiteP for="exampleInputEmail1">ETH to spend</label>
-                    <!-- NEED TO UPDATE THE FORM CONTROL DATA ETC -->
-                    <input type="string" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter amount in ETH">
-                  </div>
-                  <div align=center>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                  </div>
-                </form>       
-              </div>
-            </div>
-          </div>
-        </div>
+
           
   
   
         <!-- ######################################## Lease Plane ######################################## -->      
         <div id="leasePlane">
-          <div class=centered-container>
-            <h2> Lease a Plane </h2>       
+          <div class="centered-container div_under_nav_no_padding">
+            <h2> Browse Planes for Leasing </h2>       
     
-            <div id="carousel_container">
+            <div class="carousel_container">
               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -420,7 +610,7 @@
                     <div class="carousel-caption d-none d-md-block">
                       <h5 class="text-shad">Airbus A320</h5>
                       <p class="text-shad"><b>status:</b> Available</p>
-                      <p class='text-shad'><b>Item Code:</b>123hjkfds09j</p>
+                      <p class='text-shad'><b>Contract Address: </b>0x5B38Da6a701c568545dCfcB03FcB875f56beddC4</p>
                     </div>
                   </div>
                   
@@ -429,7 +619,7 @@
                     <div class="carousel-caption d-none d-md-block">
                       <h5 class="text-shad">Airbus A3C50</h5>
                       <p class="text-shad"><b>status:</b> Available</p>
-                      <p class='text-shad'><b>Item Code:</b>123hjkfds09j</p>
+                      <p class='text-shad'><b>Contract Address: </b>0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2</p>
                     </div>
                   </div>
   
@@ -439,7 +629,7 @@
                     <div class="carousel-caption d-none d-md-block">
                       <h5 class="text-shad">Boeing 737</h5>
                       <p class="text-shad"><b>status:</b> Unavailable</p>
-                      <p class='text-shad'><b>Item Code:</b>123hjkfds09j</p>
+                      <p class='text-shad'><b>Contract Address: </b>0x5c6B0f7Bf3E7ce046039Bd8FABdfD3f9F5021678</p>
                     </div>
                   </div>
   
@@ -450,7 +640,7 @@
                     <div class="carousel-caption d-none d-md-block">
                       <h5 class="text-shad">Boeing 738</h5>
                       <p class="text-shad"><b>status:</b> Available</p>
-                      <p class='text-shad'><b>Item Code:</b>123hjkfds09j</p>
+                      <p class='text-shad'><b>Contract Address: </b>0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db</p>
                     </div>
                   </div>
   
@@ -461,7 +651,7 @@
                     <div class="carousel-caption d-none d-md-block">
                       <h5 class="text-shad">Boeing 744</h5>
                       <p class="text-shad"><b>status:</b> Unavailable</p>
-                      <p class='text-shad'><b>Item Code:</b>123hjkfds09j</p>
+                      <p class='text-shad'><b>Contract Address: </b>0x78731D3Ca6b7E34aC0F824c42a7cC18A495cabaB</p>
                     </div>
                   </div>
   
@@ -472,7 +662,7 @@
                     <div class="carousel-caption d-none d-md-block">
                       <h5 class="text-shad">Boeing 748</h5>
                       <p class="text-shad"><b>status:</b> Available</p>
-                      <p class='text-shad'><b>Item Code:</b>123hjkfds09j</p>
+                      <p class='text-shad'><b>Contract Address: </b>0x03C6FcED478cBbC9a4FAB34eF9f40767739D1Ff7</p>
                     </div>
                   </div>
   
@@ -483,7 +673,7 @@
                     <div class="carousel-caption d-none d-md-block">
                       <h5 class="text-shad">Boeing 757</h5>
                       <p class="text-shad"><b>status:</b> Unavailable</p>
-                      <p class='text-shad'><b>Item Code:</b>123hjkfds09j</p>
+                      <p class='text-shad'><b>Contract Address: </b>0x617F2E2fD72FD9D5503197092aC168c91465E7f2</p>
                     </div>
                   </div>
   
@@ -494,7 +684,7 @@
                     <div class="carousel-caption d-none d-md-block">
                       <h5 class="text-shad">Boeing 767</h5>
                       <p class="text-shad"><b>status:</b> Available</p>
-                      <p class='text-shad'><b>Item Code:</b>123hjkfds09j</p>
+                      <p class='text-shad'><b>Contract Address: </b>0x17F6AD8Ef982297579C203069C1DbfFE4348c372</p>
                     </div>
                   </div>
   
@@ -505,7 +695,7 @@
                     <div class="carousel-caption d-none d-md-block">
                       <h5 class="text-shad">B772</h5>
                       <p class="text-shad"><b>status:</b> Unavailable</p>
-                      <p class='text-shad'><b>Item Code:</b>123hjkfds09j</p>
+                      <p class='text-shad'><b>Contract Address: </b>0x1aE0EA34a72D944a8C7603FfB3eC30a6669E454C</p>
                     </div>
                   </div>
   
@@ -516,7 +706,7 @@
                     <div class="carousel-caption d-none d-md-block">
                       <h5 class="text-shad">b773</h5>
                       <p class="text-shad"><b>status:</b> Available</p>
-                      <p class='text-shad'><b>Item Code:</b>123hjkfds09j</p>
+                      <p class='text-shad'><b>Contract Address: </b>123hjkfds09j</p>
                     </div>
                   </div> -->
   
@@ -527,7 +717,7 @@
                     <div class="carousel-caption d-none d-md-block">
                       <h5 class="text-shad">b789</h5>
                       <p class="text-shad"><b>status:</b> Available</p>
-                      <p class='text-shad'><b>Item Code:</b>123hjkfds09j</p>
+                      <p class='text-shad'><b>Contract Address: </b>0x0A098Eda01Ce92ff4A4CCb7A4fFFb5A43EBC70DC</p>
                     </div>
                   </div>
   
@@ -538,7 +728,7 @@
                     <div class="carousel-caption d-none d-md-block">
                       <h5 class="text-shad">PC12</h5>
                       <p class="text-shad"><b>status:</b> Available</p>
-                      <p class='text-shad'><b>Item Code:</b>123hjkfds09j</p>
+                      <p class='text-shad'><b>Contract Address: </b>123hjkfds09j</p>
                     </div>
                   </div> -->
                   
@@ -555,100 +745,136 @@
                 </a>
               </div>            
             </div> 
-    
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti expedita vel cumque molestiae hic consequatur nobis explicabo? Labore quo, expedita praesentium aperiam, animi perspiciatis ut sit mollitia atque accusamus iusto!</p>
-    
-            <div class=textAreaForm>
-              <form>
-                
-                
-                <div class="form-group">
-                  <label for="exampleInputEmail1">ETH to spend</label>
-                  <!-- NEED TO UPDATE THE FORM CONTROL DATA ETC -->
-                  <input type="string" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter amount in ETH">
-                </div>
-                
-                
-                <div class="form-group">
-                  <label for="exampleInputEmail1">ETH to spend</label>
-                  <!-- NEED TO UPDATE THE FORM CONTROL DATA ETC -->
-                  <input type="string" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter amount in ETH">
-                </div>
-                
-                
-                <div class="form-group">
-                  <label for="exampleInputEmail1">ETH to spend</label>
-                  <!-- NEED TO UPDATE THE FORM CONTROL DATA ETC -->
-                  <input type="string" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter amount in ETH">
-                </div>
-                
-                
-                <div class="form-group">
-                  <label for="exampleInputEmail1">ETH to spend</label>
-                  <!-- NEED TO UPDATE THE FORM CONTROL DATA ETC -->
-                  <input type="string" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter amount in ETH">
-                </div>
-  
-  
-                <div align=center>
-                  <button type="submit" class="btn btn-default">Submit</button>
-                </div>
+          </div>
+        </div>
 
-              </form>       
+        <!-- ######################################## MAKE OFFER ######################################## -->
+  
+        <div id="buyTokens" class="cloud_container padding_top_bottom">
+          <div>
+      
+            <div class=centered-container>
+              <h2 class=whiteP> <b>Make Offer</b></h2>        
+              <p class=whiteP>
+                Offer your planes to market for lease today.
+              </p>
+              <div class=textAreaForm>
+                <form>
+                  <div class="form-group">
+                    <label class=whiteP for="exampleInputEmail1">Plane Contract Number</label>
+                    <!-- NEED TO UPDATE THE FORM CONTROL DATA ETC -->
+                    <input type="string" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Plane Contract Number">
+                  </div>
+                  <div class="form-group">
+                    <label class=whiteP for="exampleInputEmail1">Flying Rate per Hour</label>
+                    <!-- NEED TO UPDATE THE FORM CONTROL DATA ETC -->
+                    <input type="string" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Rate in PLNS">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1" class=whiteP>Select Rate Type</label>
+                    <select class="form-control whiteP" id="exampleFormControlSelect1" placeholder="^">
+                      <option>Wet</option>
+                      <option>Dry</option>
+                    </select>
+                  </div>                  
+                  <div align=center>
+                    <button type="submit" class="btn btn-white">Submit</button>
+                  </div>
+                </form>       
+              </div>
+            </div>
+          </div>
+        </div> 
+        
+        <!-- ############ PENDING OFFERS  -->
+
+        <div class="centered-container padding_top_bottom" class="myPlanes">
+          <h2 class="padding-bottom_20px">Pending Offers</h2>            
+          <div class="card-trip">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/A6-EDY_A380_Emirates_31_jan_2013_jfk_%288442269364%29_%28cropped%29.jpg/1200px-A6-EDY_A380_Emirates_31_jan_2013_jfk_%288442269364%29_%28cropped%29.jpg" />
+            <div class="card-trip-infos">
+              <div>
+                <h2 align-left>Airbus A380</h2>
+                <p><strong>Requested: </strong> 37 Hours </p>
+                <p><b>Expiring: </b> 2021-09-25</p>
+                <p>Awaiting confirmation from owner</p>
+              </div>
+              <h2 class="card-trip-pricing">1200 PLNS</h2>
+              <img src="https://www.nydailynews.com/resizer/yq0gKQ4oGZAAPwp42XMDlRKu7jY=/415x353/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/CMXX76TVASNJGY7U54SYP2EYXQ.jpg" class="card-trip-user avatar-bordered" />
             </div>
           </div>
         </div>
-      </div>
-      
-      <!-- ##################################################################################################################### -->
-      <!-- ##############################################   TAB  4        ###################################################### -->
-      <!-- ##############################################   CONTRACTS   ###################################################### -->      
-      <!-- ##################################################################################################################### -->      
-      <div class="tab" data-tab="tab-4">
 
-          <!-- ######################################## TOP BANNER ######################################## -->
+    
+        
 
 
 
-        <div class="cloud_container_2 div_under_nav">
-          <div class="centered-container">
-            <h1 class="whiteP">Text Placeholder</h1>
-            <p class="whiteP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo recusandae quibusdam nulla tempora iste amet quas in doloribus eveniet ut, sit, tenetur quam debitis laudantium odit obcaecati quia veniam?</p>
+        <!-- ############ CURRENT LEASES  -->
+
+        <div class="centered-container padding_top_bottom" class="myPlanes">
+          <h2 class="padding-bottom_20px">Current Leases</h2>
+
+
+
+          <div class="card-trip">
+            <img src="https://static.wikia.nocookie.net/gtawiki/images/0/0e/Valkyrie-GTAO-front.png/revision/latest?cb=20151212171243" />
+            <div class="card-trip-infos">
+              <div>
+                <h2 align-left>GTA Valkyrie</h2>
+                <p><b>Leased from </b> 0x5...0Efb</p>
+                <p><b>Expiring </b> 2021-09-25</p>
+              </div>
+              <h2 class="card-trip-pricing">80 PLNS</h2>
+              <img src="https://i.guim.co.uk/img/media/8d1483b028d86d43b7d17f01bd808d116df5555c/0_394_2251_1350/master/2251.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=57aeb420ab1b9c3f952e0e725538fc18" class="card-trip-user avatar-bordered" />
+            </div>
           </div>
+
+<!-- 
+
+          <div class="flex justify-content-around padding_top_bottom">
+            <div class="card-product">
+              <img src="https://static.wikia.nocookie.net/gtawiki/images/0/0e/Valkyrie-GTAO-front.png/revision/latest?cb=20151212171243" />
+              <div class="card-product-infos">
+                <h2>GTA Valkyrie</h2>
+                <p><strong>80 PLNS</strong> for <strong>32 Hours</strong> </p>
+                <p><strong>Return Date</strong> 2021-09-12 </p>
+                <p><strong>Leasee:</strong> 0x5...0Efb </p>
+              </div>
+            </div>        
+          </div>     -->
+          
+          
+
         </div>
 
-
-        <!-- ######################################## BLANK TEXT SECTION ######################################## -->
-
-        <div class="centered-container padding_top_bottom">
-          <h2> NEXT SECTION </h2>    
-          <P>INSERT RANDOM CONTENT HERE</P>   
-          <!-- ############################# AGREE TO CONTRACT??? ########################### -->
-          <div class="section_container">
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn_link" data-toggle="modal" data-target="#exampleModalLong">
-              VIEW & SIGN LEASE AGREEMENT
-            </button>
+  
+        <!-- ############ AWAITING SIGNATURE  -->
+  
+        <div class="centered-container padding_top_bottom" class="myPlanes">
+          <h2 class="padding-bottom_20px">Accepted Contracts, Awaiting Signature</h2>
+          <div class="card-trip">
+            <img src="https://cdn.boldmethod.com/images/blog/lists/2016/03/11-facts-about-the-harrier-jump-jet/2.jpg" />
+            <div class="card-trip-infos">
+              <div>
+                <h2 align-left>Harrier Jump Het</h2>
+                <p><b>Expiring </b> 2021-09-25</p>
+              </div>
+              <h2 class="card-trip-pricing">736 PLNS</h2>
+              <img src="https://factmag-images.s3.amazonaws.com/wp-content/uploads/2014/02/08000614/JULIO-BASHMORE-interview-1-616x440.jpg" class="card-trip-user avatar-bordered" />
+            </div>
+            <div class="padding-bottom_20px">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn_link" data-toggle="modal" data-target="#exampleModalLong">
+                VIEW & SIGN LEASE AGREEMENT
+              </button>
+            </div>
           </div>
-        </div>    
-        
-        
-        
-        
-        
-        
-        <!-- ######################################## BLANK TEXT SECTION ######################################## -->
-        
-        <div class="centered-container padding_top_bottom">
-          <h2> NEXT SECTION </h2>    
-          <P>INSERT RANDOM CONTENT HERE</P>   
-        </div>    
-        
-        
-        
-        
-        
-      </div>
+        </div>  
+      
+
+
+      </div>   
       
       <!-- Modal NEEDS TO STAY OUTSIDE OTHER DIVS -->
       <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -685,22 +911,67 @@
             </div>
           </div>
         </div>
-      </div>      
+      </div>    
+
+
+             
+        
+
+      </div>
+
+    
       
+      <!-- ##################################################################################################################### -->
+      <!-- ##############################################   TAB  4        ###################################################### -->
+      <!-- ##############################################   CONTRACTS   ###################################################### -->      
+      <!-- ##################################################################################################################### -->      
+      <div class="tab" data-tab="tab-4">
+
+          <!-- ######################################## TOP BANNER ######################################## -->
+
+
+
+
+
+
+        <!-- ######################################## BLANK TEXT SECTION ####################################
+        
+        
+        
+        
+        
+        
+        <!-- ######################################## BLANK TEXT SECTION ######################################## -->
+        
+        <div class="centered-container padding_top_bottom">
+          <h2> NEXT SECTION </h2>    
+          <P>INSERT RANDOM CONTENT HERE</P>   
+        </div>    
+        
+        
+        
+        
+        
+      </div>
+      
+  
+      
+      <!-- ##################################################################################################################### -->
+      <!-- ##############################################   FOOTER   ###################################################### -->      
+      <!-- ##################################################################################################################### -->      
+      
+      <div class="green_container">
+        <div class="containerMiddle">
+          <div class="flex">
+            <div>
+            </div>       
+          </div>
+        </div>
+      </div> 
+
+
     </div>
 
-    <!-- ##################################################################################################################### -->
-    <!-- ##############################################   FOOTER   ###################################################### -->      
-    <!-- ##################################################################################################################### -->      
-    
-    <div class="green_container">
-      <div class="containerMiddle">
-        <div class="flex">
-          <div>
-          </div>       
-        </div>
-      </div>
-    </div> 
 
 
     <!-- ######################################## SCRIPTS ######################################## -->

@@ -1,0 +1,1097 @@
+		<!DOCTYPE html>
+		<html lang="en"><head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Checkout example · Bootstrap v5.0</title>
+
+
+
+		
+
+		<!-- Bootstrap core CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="./lib/UI/jquery-ui.css">
+
+
+
+
+
+
+		<style>
+			.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			user-select: none;
+			}
+
+			@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+			}
+		</style>
+
+		
+
+		</head>
+		<body class="bg-light">
+		
+		<div class="d-flex align-items-start">
+
+			<div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+				<button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Register Plane</button>
+				<button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Offer for Lease</button>
+				<button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">View Offers</button>
+				<button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Release Plane</button>
+			</div>
+
+			<div class="tab-content" id="v-pills-tabContent">
+			<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+				<form id="airplane"></form>
+				<div id="res" class="alert"></div>
+			</div>
+
+
+			<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+				<p><form id="leasePlane"></form></p>
+			</div>
+
+
+			<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+				<p>
+					<div class="card" style="width: 18rem;">
+					<!--<img class="card-img-top" src="..." alt="Card image cap">-->
+						<div class="card-body">
+							<h5 class="card-title">OfferReceived</h5>
+							<p id="con_received" class="card-text"></p>
+							<form id ="offerAccept">
+								<input type="hidden" id="offer_details" name="list_id" value="">
+								<button type="submit" class="btn btn-primary" id="accept_offer">Accept Offer</button>
+							</form>
+						</div>
+					</div> 
+					<!-- end Offers-->
+				</p>
+			</div>
+
+			<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+				<p>
+					<div class="card" style="width: 18rem;">
+					<!--<img class="card-img-top" src="..." alt="Card image cap">-->
+						<div class="card-body">
+							<h5 class="card-title">Release Plane to Lessee</h5>
+							<p id="plane_rel" class="card-text">
+								Deposit Paid  Please Release Plane To the Lessee Address<div id="lessAdd"></div>
+							</p>
+							<form id ="relplane">
+							<input type="hidden" id="offer_details" name="list_id" value="">
+							<button type="submit" class="btn btn-primary" id="release_plane">Release Plane</button>
+							</form>
+						</div>
+					</div>
+				</p>
+			</div>
+		</div>
+	<!-- </div> -->
+
+		
+		
+
+		<script type="text/javascript" src="deps/jquery.min.js"></script>
+		<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+		<script src="./lib/jquery.serialize-object.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.0-rc.1/web3.min.js"></script>
+
+
+			<script type="text/javascript" src="deps/underscore.js"></script>
+			<script type="text/javascript" src="deps/opt/jsv.js"></script>
+			<script type="text/javascript" src="lib/jsonform.js"></script>
+			<script src="lib/jquery.serialize-object.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.0-rc.1/web3.min.js"></script>
+
+			<script type="text/javascript">
+			$(document).ready(function () {
+			var web3 = new Web3('http://localhost:8545');
+			var plane_abi =  [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_NAA_REGO",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "approved",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "approved",
+						"type": "bool"
+					}
+				],
+				"name": "ApprovalForAll",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "listing_id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "plane_owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "token_id",
+						"type": "uint256"
+					}
+				],
+				"name": "OfferedForLease",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "rego",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "token_id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "tok_uri",
+						"type": "string"
+					}
+				],
+				"name": "Registered",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "token_id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "ipfsHash",
+						"type": "string"
+					}
+				],
+				"name": "Registered",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "NAA_REGO",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_listing",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_response",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "_contractLocation",
+						"type": "string"
+					}
+				],
+				"name": "acceptOffer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "acceptPlaneReturn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "baseURI",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkOffer",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "contract_Add",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "getApproved",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					}
+				],
+				"name": "isApprovedForAll",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "leaseAgreement",
+				"outputs": [
+					{
+						"internalType": "contract PlaneLeaseContract",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "leaseContract",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "leaseOffers",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "offerLessee",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "start_timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "end_timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "reqhours",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "lease_offer",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mktplace_Add",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_token_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_rate_per_fh",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum LeasablePlane.RateType",
+						"name": "_rate_type",
+						"type": "uint8"
+					}
+				],
+				"name": "offerLease",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "ownerOf",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "plane_owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "planes",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "identifier",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "plane_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "leasable",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "rate_per_fh",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "rate_type",
+				"outputs": [
+					{
+						"internalType": "enum LeasablePlane.RateType",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_requestor",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_listing",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_start_timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_end_timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_reqhours",
+						"type": "uint256"
+					}
+				],
+				"name": "receiveOffer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_NAA_REGO",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "token_uri",
+						"type": "string"
+					}
+				],
+				"name": "registerPlane",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_contractAddress",
+						"type": "address"
+					}
+				],
+				"name": "releasePlane",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_data",
+						"type": "bytes"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "approved",
+						"type": "bool"
+					}
+				],
+				"name": "setApprovalForAll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "status",
+				"outputs": [
+					{
+						"internalType": "enum LeasablePlane.Status",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenByIndex",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenOfOwnerByIndex",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenURI",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		]
+
+			var plane_address = '0xAA319c4949Ad32f440b60Cfb2F3Ca973664A95f6';
+			var mkt_address;
+			var lease_address;
+			var plane_contract = new web3.eth.Contract(plane_abi, plane_address);
+			var current_listID=1;
+
+			/// tab for offers
+			plane_contract.methods.leaseOffers(1).call().then(function (bal) {
+				//$("#myInput").val(bal);
+				// { 0: "0x671fAf3c38c4B54855187A4eD386785Ed6e1Da73", 1: "1627781844", 2: "1659317844", 3: "45", offerLessee: "0x671fAf3c38c4B54855187A4eD386785Ed6e1Da73", start_timestamp: "1627781844", end_timestamp: "1659317844", reqhours: "45" }
+				
+				end= new Date(bal.end_timestamp * 1000) ;
+				start = new Date(bal.start_timestamp * 1000) ;
+				var txt_offer =  'From:'+ bal.offerLessee +'<p>Start Time:'+ start + '<p> End Time:'+ end+ '<p> No of Flying Hours:' +bal.reqhours;
+				$("#con_received").html(txt_offer);
+				$("#lessAdd").html("<b>" +bal.offerLessee+"</b");
+				$("#offer_details").val(bal);
+				//tab for offers
+
+				console.log(bal)
+			});
+			$( "#offerAccept").submit(function(event) {      
+				var reqData = $('#offer_details').val();
+				const myJSON = JSON.stringify(reqData);
+				console.log(myJSON);
+				$('#offerAccept').parent(".card-body").parent('.card').toggle()
+			// $('#planeOffer').modal('toggle')
+				//function registerInterest(uint _listingID,uint _start_timestamp,    uint _end_timestamp, uint _req_hours)
+				//{"from":"08/12/2021","to":"12/23/2021","hours":"345","list_id":"0"}
+				//var from_u =parseInt((new Date(reqData.from).getTime() / 1000).toFixed(0))
+				//var to_u =parseInt((new Date(reqData.to).getTime() / 1000).toFixed(0))
+				//0xa791c51031C5c03a8311Eac23b90690F369F2B10
+				//function acceptOffer (uint _listing, bool _response, string memory _contractLocation) public returns(bool){
+					plane_contract.methods.acceptOffer(current_listID,true,lease_addr).call().then(function (bal) {
+					lease_address = bal;
+					console.log(bal);
+
+				});
+				event.preventDefault();
+		});
+
+		$('form#airplane').jsonForm({
+					"schema": {
+						"Aircraft": {
+							"type": "string",
+							"title": "Aircraft Registration Number"
+						},
+						"MfrCode": {
+							"type": "string",
+							"title": "Mfr/Mdl Code"
+						},
+						"Model": {
+							"type": "string",
+							"title": "Model Name"
+						},
+						"Engine": {
+							"type": "string",
+							"title": "Engine Type"
+						},
+						"No_Engines": {
+							"type": "integer",
+							"title": "No. of Engines"
+						},
+						"No_Seats": {
+							"type": "string",
+							"title": "No. of Seats"
+						},
+						"Take_Weight": {
+							"type": "integer",
+							"title": "Maximum Takeoff Weight (KG)"
+						},
+						"Image": {
+							"type": "string",
+							"title": "Image"
+						}
+					},
+					onSubmit: function (errors, values) {
+						if (errors) {
+							$('#res').html('<p>I beg your pardon?</p>');
+						}
+						else {
+							var formData = $('form#airplane').serializeJSON(); 
+							//NAA_REGO,tokenURI
+							var NAA_REGO = $('input[name="Aircraft"]').val();
+							plane_contract.methods.registerPlane(NAA_REGO, formData).call().then(function (bal) {
+							//$("#myInput").val(bal);
+							console.log(bal)
+						});
+						
+							console.log(formData);
+							
+						}
+					}
+				});
+				$('form#leasePlane').jsonForm({
+						"schema": {
+							"rate_fh": {
+								"type": "integer",
+								"title": "Rate per Flying Hour"
+							},
+							"rate_type": {
+								"type": "string",
+								"title": "Rate Type",
+								"enum": ["Dry", "Wet"]
+							},
+
+						},
+						onSubmit: function (errors, values) {
+							if (errors) {
+								$('#res').html('<p>I beg your pardon?</p>');
+							}
+							else {
+								var formData = $('form#leasePlane').serializeJSON();
+								var rate_fh = $('input[name="rate_fh"]').val();
+								var rate_type = $('select[name="rate_type"]').val();
+								var rate = 0;
+								if (rate_type.match("Wet")) { rate = 1 }
+
+								plane_contract.methods.offerLease(1, rate_fh,rate).call().then(function (bal) {
+							//$("#myInput").val(bal);
+									console.log(bal);
+							});
+							plane_contract.methods.mktplace_Add().call().then(function (add) {
+							mkt_address = add;
+							console.log(add);
+							
+						});
+
+							}
+						}
+					});
+					$( "#release_plane").submit(function(event) {  
+
+					plane_contract.methods.releasePlane(mkt_address).call(); });
+
+
+
+
+			});
+				
+			</script>
+
+		
+
+
+		</body>
+		</html>
