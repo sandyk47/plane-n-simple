@@ -34,13 +34,8 @@ Our platform uses a native currency (the $PLNS token) to settle all transactions
 <img src="/sandbox/front_end_dev/images/flowchrt.png" alt="flow" width="1200"/>
 
 $PLNS is a fungible token, built to the ERC-20 token standard. It is designed to be an all purpose alternate currency that allows owners and users to transact and lease in the PlaneSimple marketplace.  
-	* Owners must use $PLNS to register aircraft and pay a listing fee. 
-	* Operators must purchase $PLNS to pay their leasing costs to the aircraft owner.  
 
-$PLNS can be purchased through our initial crowdsale at a rate of .001ETH per PlaneToken.  
-
-After the initial sale, all remaining $PLNS tokens will be burned and those that were purchased will be free to trade on the open market.  
-
+## Tokenomics
 
 | $PLNS TOKEN DETAIL |      | Future Considerations  
 | ----------- | ----------- |-----------  
@@ -49,8 +44,20 @@ After the initial sale, all remaining $PLNS tokens will be burned and those that
 | Exchange rate| .001ETH   |Could reduce as above  
 | Standard  | ERC-20   |  
 | Blockchain  | Ethereum   |Multi-Chain?  
-| Decimals  | 0   |Simple for testing, needs altering  
-    
+| Decimals  | 0   |Simple for testing, needs altering
+
+## Utility  
+
+The $PLNS token will be the native currency for all transactions on the PlaneSimple Marketplace
+	* Owners must use $PLNS to register aircraft and pay a listing fee. 
+	* Operators must purchase $PLNS to pay their leasing costs to the aircraft owner.  
+
+$PLNS can be purchased through our initial crowdsale at a rate of .001ETH per PlaneToken.  
+
+After the initial sale, all remaining $PLNS tokens will be burned and those that were purchased will be free to trade on the open market.  
+
+## Minting:  
+* The team will retain the ability to mint new tokens in order to inflate the supply as necessary. This will be critical for funding the team as well as adding some stability to the $PLNS price ($USD)
     
 ## Timeline
 
